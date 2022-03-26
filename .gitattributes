@@ -1,2 +1,2 @@
-* linguist-vendored
-*.js linguist-vendored=false
+# Direct Swift
+*.* linguist-language=Dart
