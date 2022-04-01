@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_widgets/icon_widget.dart';
-import 'package:flutter_widgets/text_widget.dart';
+
+import 'basic_widgets/appbar_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,24 +40,14 @@ class MyHomePage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const IconWidget(),
+                        builder: (context) => const AppBarWidget(),
                       ));
                 },
-                child: const Text('Icon Widget'),
+                child: const Text('AppBar Widget'),
                 style: ElevatedButton.styleFrom(primary: Colors.deepOrange),
               ),
               const SizedBox(height: 10),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const TextWidget(),
-                      ));
-                },
-                child: const Text('Text Widget'),
-                style: ElevatedButton.styleFrom(primary: Colors.pink),
-              )
+              
             ],
           ),
         ),
