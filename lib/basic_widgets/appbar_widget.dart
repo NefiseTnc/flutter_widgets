@@ -21,7 +21,7 @@ class _AppBarWidgetState extends State<AppBarWidget>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AppBar Widget'),
+        title: const Text('Basic Widgets'),
         backgroundColor: Colors.purple,
         automaticallyImplyLeading: false,
         leading: IconButton(
